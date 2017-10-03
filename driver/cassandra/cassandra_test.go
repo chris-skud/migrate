@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gemnasium/migrate/file"
-	"github.com/gemnasium/migrate/migrate/direction"
-	pipep "github.com/gemnasium/migrate/pipe"
+	"github.com/chris-skud/migrate/file"
+	"github.com/chris-skud/migrate/migrate/direction"
+	pipep "github.com/chris-skud/migrate/pipe"
 	"github.com/gocql/gocql"
 )
 

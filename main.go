@@ -1,6 +1,6 @@
 // Package main is the CLI.
 // You can use the CLI via Terminal.
-// import "github.com/gemnasium/migrate/migrate" for usage within Go.
+// import "github.com/chris-skud/migrate/migrate" for usage within Go.
 package main
 
 import (
@@ -11,16 +11,16 @@ import (
 	"time"
 
 	"github.com/fatih/color"
-	_ "github.com/gemnasium/migrate/driver/bash"
-	_ "github.com/gemnasium/migrate/driver/cassandra"
-	_ "github.com/gemnasium/migrate/driver/crate"
-	_ "github.com/gemnasium/migrate/driver/mysql"
-	_ "github.com/gemnasium/migrate/driver/postgres"
-	_ "github.com/gemnasium/migrate/driver/sqlite3"
-	"github.com/gemnasium/migrate/file"
-	"github.com/gemnasium/migrate/migrate"
-	"github.com/gemnasium/migrate/migrate/direction"
-	pipep "github.com/gemnasium/migrate/pipe"
+	_ "github.com/chris-skud/migrate/driver/bash"
+	_ "github.com/chris-skud/migrate/driver/cassandra"
+	_ "github.com/chris-skud/migrate/driver/crate"
+	_ "github.com/chris-skud/migrate/driver/mysql"
+	_ "github.com/chris-skud/migrate/driver/postgres"
+	_ "github.com/chris-skud/migrate/driver/sqlite3"
+	"github.com/chris-skud/migrate/file"
+	"github.com/chris-skud/migrate/migrate"
+	"github.com/chris-skud/migrate/migrate/direction"
+	pipep "github.com/chris-skud/migrate/pipe"
 )
 
 var url = flag.String("url", os.Getenv("MIGRATE_URL"), "")
