@@ -10,17 +10,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/fatih/color"
-	_ "github.com/chris-skud/migrate/driver/bash"
-	_ "github.com/chris-skud/migrate/driver/cassandra"
-	_ "github.com/chris-skud/migrate/driver/crate"
-	_ "github.com/chris-skud/migrate/driver/mysql"
 	_ "github.com/chris-skud/migrate/driver/postgres"
-	_ "github.com/chris-skud/migrate/driver/sqlite3"
 	"github.com/chris-skud/migrate/file"
 	"github.com/chris-skud/migrate/migrate"
 	"github.com/chris-skud/migrate/migrate/direction"
 	pipep "github.com/chris-skud/migrate/pipe"
+	"github.com/fatih/color"
 )
 
 var url = flag.String("url", os.Getenv("MIGRATE_URL"), "")
